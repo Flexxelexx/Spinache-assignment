@@ -27,13 +27,16 @@
 
 
 <h4>Uitgelichte ingredienten</h4>
-<img src="../assets/spinazie.png" height="100" width="150" alt="Plaatje van spinazie">
-<pre>   Spinazie is erg gezond</pre>
+<figure>
+    <img src="../assets/spinazie.png" height="100" width="150" alt="Plaatje van spinazie">
+    <figcaption>Spinazie is erg gezond</figcaption>
+</figure>
 <br>
+<figure>
 <img src="../assets/kaas.jpeg" height="100" width="150" alt="Plaatje van kaas">
 <br>
-<pre>   Kaas is voor erg lekker</pre>
-
+<figcaption>Kaas is voor erg lekker</figcaption>
+</figure>
 <p>Klik <a href="voedingswaarden.html" target="_blank">hier</a> voor de voedingswaarden</p>
 
 <h5>Bereiden</h5>
@@ -48,31 +51,39 @@
         <li>Snijd de champignons in plakjes.</li>
     </ul>
 
-    <li>Verhit de olie in een hapjespan en bak de ui en champignons 3 min. op hoog vuur. Voeg de knoflook, spinazie en
+    <li>
+        Verhit de olie in een hapjespan en bak de ui en champignons 3 min. op hoog vuur. Voeg de knoflook, spinazie en
         Italiaanse kruiden toe en verwarm 7 min. op middelhoog vuur mee. Roer regelmatig.
     </li>
 
-    <li>Voeg de zuivelspread toe en verwarm 1 min. mee. Breng de groentesaus op smaak met peper en eventueel zout. Doe
+    <li>
+        Voeg de zuivelspread toe en verwarm 1 min. mee. Breng de groentesaus op smaak met peper en eventueel zout. Doe
         ondertussen de linzen in een vergiet en spoel af onder koud stromend water.
         Laat uitlekken en voeg toe aan de groentesaus.
     </li>
 
-    <li>Schep 2 lepels groentesaus op de bodem van de ovenschaal. Bedek achtereenvolgens met ⅓ van de lasagnebladen, ⅓
+    <li>
+        Schep 2 lepels groentesaus op de bodem van de ovenschaal. Bedek achtereenvolgens met ⅓ van de lasagnebladen, ⅓
         van de rest van de groentesaus en de kaas.
         Herhaal dit nog 2 keer en eindig met de rest van de kaas. Breng op smaak met peper.
     </li>
 
-    <li>Bak de lasagne in het midden van de oven in ca. 40 min. gaar. Dek af met aluminiumfolie als de lasagne te donker
+    <li>
+        Bak de lasagne in het midden van de oven in ca. 40 min. gaar. Dek af met aluminiumfolie als de lasagne te donker
         wordt.
     </li>
     <br>
+</ol>
 
-    <b>Bereidingstip:</b> Je kunt de lasagne 1 dag van tevoren maken tot en met het afbakken in de oven. Bewaar afgedekt
-    in de koelkast en laat tijdens het voorverwarmen van de oven op kamertemperatuur komen.
-    <br>
-    <br>
-    <br>
-    <strong>Bedankt voor het lezen van dit recept. Laat ons weten wat je ervan vond!</strong></ol>
+
+<b>Bereidingstip:</b> Je kunt de lasagne 1 dag van tevoren maken tot en met het afbakken in de oven. Bewaar afgedekt
+in de koelkast en laat tijdens het voorverwarmen van de oven op kamertemperatuur komen.
+<br>
+<br>
+<br>
+<strong>Bedankt voor het lezen van dit recept. Laat ons weten wat je ervan vond!</strong>
+<br>
+<br>
 
 <form>
     <fieldset>
@@ -100,12 +111,14 @@
 
 
         <p>Zou je dit recept willen uitproberen?</p>
-        <input type="radio" id="Nee">
-        <label for="Nee">Nee</label>
-        <input type="radio" id="Ja">
-        <label for="Ja">Ja</label>
-        <input type="radio" id="Misschien">
-        <label for="Misschien">Misschien</label>
+        <form>
+            <input type="radio" id="Nee" name="optie" value="Nee">
+            <label for="Nee">Nee</label>
+            <input type="radio" id="Ja" name="optie" value="Ja">
+            <label for="Ja">Ja</label>
+            <input type="radio" id="Misschien" name="optie" value="Misschien">
+            <label for="Misschien">Misschien</label>
+        </form>
         <br>
 
         <form>
@@ -114,6 +127,7 @@
             <textarea id="OpmerkingenVeld" name="OpmerkingenVeld" rows="4"
                       cols="40">Wat vond je van het recept?</textarea>
         </form>
+        <br>
         <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief">
         <label for="nieuwsbrief">Schrijf me in voor de nieuwsbrief</label>
         <p><input type="submit" value="Versturen"></p>
