@@ -27,12 +27,14 @@
 
 
 <h4>Uitgelichte ingredienten</h4>
+<figure>
 <img src="../assets/spinazie.png" height="100" width="150" alt="Plaatje van spinazie">
-<pre>   Spinazie is erg gezond</pre>
+<figcaption>Spinazie is erg gezond</figcaption>
+</figure>
 <br>
 <img src="../assets/kaas.jpeg" height="100" width="150" alt="Plaatje van kaas">
 <br>
-<pre>   Kaas is voor erg lekker</pre>
+<pre>  Kaas is voor erg lekker</pre>
 
 <p>Klik <a href="voedingswaarden.html" target="_blank">hier</a> voor de voedingswaarden</p>
 
@@ -66,13 +68,13 @@
         wordt.
     </li>
     <br>
-
+</ol>
     <b>Bereidingstip:</b> Je kunt de lasagne 1 dag van tevoren maken tot en met het afbakken in de oven. Bewaar afgedekt
     in de koelkast en laat tijdens het voorverwarmen van de oven op kamertemperatuur komen.
     <br>
     <br>
     <br>
-    <strong>Bedankt voor het lezen van dit recept. Laat ons weten wat je ervan vond!</strong></ol>
+    <strong>Bedankt voor het lezen van dit recept. Laat ons weten wat je ervan vond!</strong>
 
 <form>
     <fieldset>
@@ -100,12 +102,14 @@
 
 
         <p>Zou je dit recept willen uitproberen?</p>
-        <input type="radio" id="Nee">
-        <label for="Nee">Nee</label>
-        <input type="radio" id="Ja">
-        <label for="Ja">Ja</label>
-        <input type="radio" id="Misschien">
-        <label for="Misschien">Misschien</label>
+        <form>
+            <input type="radio" id="Nee" name="optie" value="Nee">
+                <label for="Nee">Nee</label>
+            <input type="radio" id="Ja" name="optie" value="Ja">
+                <label for="Ja">Ja</label>
+            <input type="radio" id="Misschien" name="optie" value="Misschien">
+                <label for="Misschien">Misschien</label>
+        </form>
         <br>
 
         <form>
@@ -114,6 +118,7 @@
             <textarea id="OpmerkingenVeld" name="OpmerkingenVeld" rows="4"
                       cols="40">Wat vond je van het recept?</textarea>
         </form>
+        <br>
         <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief">
         <label for="nieuwsbrief">Schrijf me in voor de nieuwsbrief</label>
         <p><input type="submit" value="Versturen"></p>
