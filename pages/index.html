@@ -28,13 +28,13 @@
 
 <h4>Uitgelichte ingredienten</h4>
 <img src="../assets/spinazie.png" height="100" width="150" alt="Plaatje van spinazie">
-<p>Spinazie is erg gezond</p>
+<pre>   Spinazie is erg gezond</pre>
 <br>
 <img src="../assets/kaas.jpeg" height="100" width="150" alt="Plaatje van kaas">
 <br>
-<p>Kaas is voor erg lekker</p>
+<pre>   Kaas is voor erg lekker</pre>
 
-<p>Klik <a href="voedingswaarden.html" target="_blank" >hier</a> voor de voedingswaarden</p>
+<p>Klik <a href="voedingswaarden.html" target="_blank">hier</a> voor de voedingswaarden</p>
 
 <h5>Bereiden</h5>
 
@@ -77,8 +77,12 @@
 <form>
     <fieldset>
         <legend>Gegevens</legend>
-        <p>Naam: <input type=""></p>
-        <p>Email: <input type=""></p>
+        <p>Naam: <label>
+            <input type="text">
+        </label></p>
+        <p>Email: <label>
+            <input type="text">
+        </label></p>
     </fieldset>
 </form>
 
@@ -86,14 +90,13 @@
     <fieldset>
         <legend>Jouw review</legend>
         <br>
-        <label for="Anders">Hoe heb je dit recept gevonden?</label>
-            <select name="opties" id="opties">
-                <option value="Anders">Anders</option>
-                <option value="Google">Google</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Familie">Familie</option>
-            </select>
-
+        Hoe heb je dit recept gevonden?
+        <label for="opties"></label><select name="opties" id="opties">
+        <option value="Anders">Anders</option>
+        <option value="Google">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Familie">Familie</option>
+    </select>
 
 
         <p>Zou je dit recept willen uitproberen?</p>
@@ -106,9 +109,10 @@
         <br>
 
         <form>
-            <p><label for="Opmerkingen">Opmerkingen:</label></p>
-            <p><textarea id="OpmerkingenVeld" name="OpmerkingenVeld" rows="4"
-                         cols="40">Wat vond je van het recept?</textarea></p>
+            <p>Opmerkingen:</p>
+            <label for="OpmerkingenVeld"></label>
+            <textarea id="OpmerkingenVeld" name="OpmerkingenVeld" rows="4"
+                      cols="40">Wat vond je van het recept?</textarea>
         </form>
         <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief">
         <label for="nieuwsbrief">Schrijf me in voor de nieuwsbrief</label>
